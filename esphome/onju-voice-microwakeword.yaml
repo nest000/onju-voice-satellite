@@ -3,9 +3,9 @@ substitutions:
   friendly_name: "Onju Voice Satellite"
   project_version: "1.1.0"
   device_description: "Onju Voice Satellite with ESPHome software and microWakeWord"
-  wakeup_sound_url: "https://github.com/tetele/onju-voice-satellite/raw/main/res/wakeup.mp3" # New Notification #7 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/736267/
-  error_sound_url: "https://github.com/tetele/onju-voice-satellite/raw/main/res/error.mp3" # Error #8 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734442/
-  timer_finished_sound_url: "https://github.com/tetele/onju-voice-satellite/raw/main/res/timer_finished.mp3" # New Notification #6 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734445/
+  wakeup_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/wakeup.mp3" # New Notification #7 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/736267/
+  error_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/error.mp3" # Error #8 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734442/
+  timer_finished_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/timer_finished.mp3" # New Notification #6 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734445/
 
 external_components:
   - source:
@@ -20,7 +20,7 @@ esphome:
   comment: "${device_description}"
   name_add_mac_suffix: true
   project:
-    name: tetele.onju_voice_satellite
+    name: nest000.onju_voice_satellite
     version: "${project_version}"
   min_version: 2024.7.3
   platformio_options:
@@ -56,7 +56,7 @@ esphome:
       - script.execute: reset_led
 
 dashboard_import:
-  package_import_url: github://tetele/onju-voice-satellite/esphome/onju-voice-microwakeword.yaml@main
+  package_import_url: github://nest000/onju-voice-satellite/esphome/onju-voice-microwakeword.yaml@main
 
 esp32:
   board: esp32-s3-devkitc-1
