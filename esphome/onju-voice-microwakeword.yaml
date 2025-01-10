@@ -3,10 +3,10 @@ substitutions:
   friendly_name: "Onju Voice Satellite"
   project_version: "1.1.0"
   device_description: "Onju Voice Satellite with ESPHome software and microWakeWord"
-  wakeup_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/wakeup.mp3" # New Notification #7 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/736267/
-  error_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/error.mp3" # Error #8 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734442/
-  timer_finished_sound_url: "https://github.com/nest000/onju-voice-satellite/raw/main/res/timer_finished.mp3" # New Notification #6 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734445/
-
+  wakeup_sound_url: "http://192.168.23.23:8123/local/onju/wakeup.mp3" # New Notification #7 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/736267/
+  error_sound_url: "http://192.168.23.23:8123/local/onju/error.mp3" # Error #8 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734442/
+  timer_finished_sound_url: "http://192.168.23.23:8123/local/onju/timer_finished.mp3" # New Notification #6 by UNIVERSFIELD https://freesound.org/people/UNIVERSFIELD/sounds/734445/
+  
 external_components:
   - source:
       type: git
