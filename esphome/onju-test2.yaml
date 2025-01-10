@@ -20,7 +20,7 @@ esphome:
   comment: "${device_description}"
   name_add_mac_suffix: true
   project:
-    name: tetele.onju_voice_satellite
+    name: nest000.onju_voice_satellite
     version: "${project_version}"
   min_version: 2024.7.3
   platformio_options:
